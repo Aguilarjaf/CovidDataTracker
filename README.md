@@ -8,3 +8,7 @@ The Covid Data Tracker relies on an API to retrieve appropriate data related to 
 ## Technologies Used
 
 HTML, CSS, Bootstrap, JS, JSX, Babel, React.js
+
+## Deployment
+This application has been deployed using Heroku's servers.
+You may access the latest project at [coviddata-tracker](https://coviddata-tracker.herokuapp.com/).
