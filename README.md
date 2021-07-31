@@ -10,6 +10,17 @@ Covid Data Tracker relies on an API to retrieve appropriate data related to the 
 
 HTML, CSS, Bootstrap, JS, JSX, Babel, React.js, VSCode, and Heroku.
 
+## Install
+
+```bash
+npm install
+```
+
+## Usage
+```bash
+npm start
+```
+
 ## Deployment
 This application has been deployed using Heroku's servers.
 You may access the latest project at [coviddata-tracker](https://coviddata-tracker.herokuapp.com/).
@@ -17,5 +28,7 @@ You may access the latest project at [coviddata-tracker](https://coviddata-track
 ## Contributors
 - Jorge Aguilar-Flores
 
+## Show your support
+
 ## License & Copyright
-ⓒ Jorge Aguilar-Flores, [Jet City Marketing Group](https://jetcitymarketinggroup.com/)
+Copyright ⓒ Jorge Aguilar-Flores
