@@ -138,6 +138,7 @@ form.example::after {
   url("covidbg.jpg");
   background-size: cover;
   background: contain;
+  background-position: center;
   height: 100vh;
   width: 100%;
 
