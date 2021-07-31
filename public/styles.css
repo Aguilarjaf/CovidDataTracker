@@ -1,0 +1,183 @@
+body,
+html {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Bootstrap CSS */
+
+body {
+  /* display: -ms-flexbox; */
+  /* display: -webkit-box; */
+  /* display: flex; */
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: grey;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+#stateInput {
+  text-align: center;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styles the information text */
+.covid-data {
+  color: white;
+  text-align: center !important;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Styles for jumbotron */
+.jumbotron-fluid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("covidbg.jpg");
+  background-size: cover;
+  background: contain;
+  height: 100vh;
+  width: 100%;
+
+  overflow: hidden;
+
+  align-items: center;
+  display: flex;
+}
+
+/* Styles for learn more button */
+.learnMore {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #0086d9;
+  line-height: 20px;
+  animation: zoominoutsinglefeatured 1s infinite ;
+}
+
+.learnMore:hover {
+  color: #0069d974;
+  text-decoration: none;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+/* Styling for learn more section */
+.learnMoreSection {
+  height: 300px;
+  width: 100%;
+  margin-top: 15%;
+}
