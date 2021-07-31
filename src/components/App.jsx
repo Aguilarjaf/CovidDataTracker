@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <StateSearch />
-      <LearnMore />
+      {/* <LearnMore /> */}
     </div>
   );
 }
