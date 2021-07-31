@@ -1,4 +1,5 @@
 <div align="center"><h1>Covid Data Tracker</h1></div>
+
 **Version 1.0.0**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
