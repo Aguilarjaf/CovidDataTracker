@@ -1,7 +1,7 @@
 <div align="center"><h1>:mask: Covid Data Tracker :face_with_thermometer:</h1></div>
 
 **Version 1.0.0**
-:face_with_thermometer:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
