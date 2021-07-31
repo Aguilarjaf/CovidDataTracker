@@ -135,11 +135,11 @@ form.example::after {
 /* Styles for jumbotron */
 .jumbotron-fluid {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("covidbg.jpg");
+    url("covidbg.jpg");
   background-size: cover;
   background: contain;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 
   overflow: hidden;
@@ -156,7 +156,7 @@ form.example::after {
   text-decoration: none;
   color: #0086d9;
   line-height: 20px;
-  animation: zoominoutsinglefeatured 1s infinite ;
+  animation: zoominoutsinglefeatured 1s infinite;
 }
 
 .learnMore:hover {
@@ -166,13 +166,13 @@ form.example::after {
 
 @keyframes zoominoutsinglefeatured {
   0% {
-      transform: scale(1,1);
+    transform: scale(1, 1);
   }
   50% {
-      transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
   }
   100% {
-      transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
@@ -181,4 +181,18 @@ form.example::after {
   height: 300px;
   width: 100%;
   margin-top: 15%;
+}
+
+/* Styles for footer */
+footer {
+  /* text-align: center; */
+  height: 10vh;
+  background-color: black;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+footer p {
+  color: #ccc;
 }
