@@ -120,7 +120,7 @@ form.example::after {
 }
 
 .rotate {
-  animation: rotation 3s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
 @keyframes rotation {
@@ -134,8 +134,8 @@ form.example::after {
 
 /* Styles for jumbotron */
 .jumbotron-fluid {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("covidbg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("covidbg.PNG");
   background-size: cover;
   background: contain;
   background-position: center;
