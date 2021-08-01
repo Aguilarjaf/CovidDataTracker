@@ -9,6 +9,7 @@ function StateSearch() {
   const [stateEntered, setStateEntered] = useState("");
 
   const [covidData, setCovidData] = useState({
+    currentState: "",
     completedVaccines: "",
     totalPopulation: "",
     percentageVaccinated: "",
@@ -64,6 +65,7 @@ function StateSearch() {
         setRetrieved(true);
 
         setCovidData({
+          currentState: parsed_data.state,
           completedVaccines: parsed_data.actuals.vaccinationsCompleted,
           totalPopulation: parsed_data.population,
           percentageVaccinated: Math.round(
@@ -120,7 +122,7 @@ function StateSearch() {
             >
               Search Now
             </button>
-            <p className="mt-2 mb-3">
+            <p className="mt-2 mb-1">
               <span style={{ color: "white" }}>Powered by </span>
               <a href="https://covidactnow.org/?s=1898818">CovidActNow.org</a>
             </p>
@@ -131,6 +133,7 @@ function StateSearch() {
         ) : (
           <FadeIn>
             <DataFields
+              state={covidData.currentState}
               completed={covidData.completedVaccines}
               population={covidData.totalPopulation}
               percentage={covidData.percentageVaccinated}

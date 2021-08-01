@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <StateSearch />
-      {/* <LearnMore /> */}
+      <LearnMore />
       <Footer />
     </div>
   );

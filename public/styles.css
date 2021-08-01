@@ -114,7 +114,7 @@ form.example::after {
 .covid-data {
   color: white;
   text-align: center !important;
-  font-size: 25px;
+  font-size: 22px;
   margin: 0px;
   padding: 0px;
 }
@@ -139,7 +139,7 @@ form.example::after {
   background-size: cover;
   background: contain;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 
   overflow: hidden;
@@ -178,15 +178,15 @@ form.example::after {
 
 /* Styling for learn more section */
 .learnMoreSection {
-  height: 300px;
   width: 100%;
-  margin-top: 15%;
+  margin-top: 15px;
 }
 
 /* Styles for footer */
 footer {
   /* text-align: center; */
-  height: 10vh;
+  height: 75px;
+  bottom: 0;
   background-color: black;
   display: flex !important;
   align-items: center !important;
@@ -195,4 +195,9 @@ footer {
 
 footer p {
   color: #ccc;
+}
+
+.card {
+  max-width: 750px;
+  margin: auto;
 }

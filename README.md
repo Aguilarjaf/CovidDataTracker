@@ -5,7 +5,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
-Covid Data Tracker relies on an API to retrieve appropriate data related to the Covid 19 pandemic. This application provides the user with an interactive UI and search box, where the user can supply the name or abbreviation of one of fifty states in the United States of America, and view the Covid 19 data related to that state.
+Covid Data Tracker relies on an API supplied by www.CovidActNow.org, which sends the latest data of the Covid 19 pandemic. This application provides the user with an interactive UI and search area, where the user can supply the name or abbreviation of one of fifty states to view the Covid 19 data relecent to that state.
 
 ## Technologies Used
 
