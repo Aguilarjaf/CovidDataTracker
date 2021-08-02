@@ -4,10 +4,13 @@ import uuid from "react-uuid";
 
 function CovidNews() {
   const [articlesArray, setArticlesArray] = useState([]);
+  const [arrayUpdated, setArrayUpdated] = useState(false);
 
   useEffect(() => {
     // Retrieves data from API
-    fetch(`https://newsapi.org/v2/top-headlines?q=covid&sortBy=popularity&country=us&apiKey=${process.env.REACT_APP_NEWS_KEY}`)
+    fetch(
+      `https://newsapi.org/v2/top-headlines?q=covid&sortBy=popularity&country=us&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+    )
       .then((response_data) => {
         // console.log(response_data);
         return response_data.json();
@@ -16,6 +19,7 @@ function CovidNews() {
         console.log("Getting Covid News");
         console.log(parsed_data.articles);
         setArticlesArray(parsed_data.articles);
+        setArrayUpdated(true);
       })
       .catch((error_data) => {
         console.log(error_data);
@@ -25,16 +29,19 @@ function CovidNews() {
   return (
     <div className="container">
       <h3>Covid News Section</h3>
-      {(articlesArray.length > 0) ? articlesArray.map((singleArticle) => (
-        <Article
-          key={uuid()}
-          articleImage={singleArticle.urlToImage}
-          title={singleArticle.title}
-          author={singleArticle.author}
-          articleDescription={singleArticle.description}
-          link={singleArticle.url}
-        />
-      )) : null}
+      {console.log(articlesArray.length)}
+      {arrayUpdated
+        ? articlesArray.map((singleArticle) => (
+            <Article
+              key={uuid()}
+              articleImage={singleArticle.urlToImage}
+              title={singleArticle.title}
+              author={singleArticle.author}
+              articleDescription={singleArticle.description}
+              link={singleArticle.url}
+            />
+          ))
+        : null}
     </div>
   );
 }
