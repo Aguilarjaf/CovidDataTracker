@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Article from "./Article.jsx";
 import uuid from "react-uuid";
 
@@ -6,7 +6,7 @@ function CovidNews() {
   const [articlesArray, setArticlesArray] = useState(["overwrite"]);
   const [arrayUpdated, setArrayUpdated] = useState(false);
 
-  useEffect(() => {
+  function getCovidNews() {
     // Retrieves data from API
     fetch(
       `https://newsapi.org/v2/top-headlines?q=covid&sortBy=popularity&country=us&apiKey=${process.env.REACT_APP_NEWS_KEY}`
@@ -24,11 +24,11 @@ function CovidNews() {
       .catch((error_data) => {
         console.log(error_data);
       });
-  }, []);
+  }
 
   return (
     <div className="container">
-      <h3>Covid News Section</h3>
+      <h3 onClick={getCovidNews}>Covid News Section</h3>
       {arrayUpdated
         ? articlesArray.map((singleArticle) => (
             <Article
