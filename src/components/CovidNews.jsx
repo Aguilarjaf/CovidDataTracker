@@ -3,7 +3,7 @@ import Article from "./Article.jsx";
 import uuid from "react-uuid";
 
 function CovidNews() {
-  const [articlesArray, setArticlesArray] = useState([]);
+  const [articlesArray, setArticlesArray] = useState(["overwrite"]);
   const [arrayUpdated, setArrayUpdated] = useState(false);
 
   useEffect(() => {
