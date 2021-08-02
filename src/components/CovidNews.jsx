@@ -25,7 +25,7 @@ function CovidNews() {
   return (
     <div className="container">
       <h3>Covid News Section</h3>
-      {articlesArray.map((singleArticle) => (
+      {articlesArray.length > 0 ? articlesArray.map((singleArticle) => (
         <Article
           key={uuid()}
           articleImage={singleArticle.urlToImage}
@@ -34,7 +34,7 @@ function CovidNews() {
           articleDescription={singleArticle.description}
           link={singleArticle.url}
         />
-      ))}
+      )) : null}
     </div>
   );
 }
