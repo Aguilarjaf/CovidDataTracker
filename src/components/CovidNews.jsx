@@ -29,7 +29,6 @@ function CovidNews() {
   return (
     <div className="container">
       <h3>Covid News Section</h3>
-      {console.log(articlesArray.length)}
       {arrayUpdated
         ? articlesArray.map((singleArticle) => (
             <Article
