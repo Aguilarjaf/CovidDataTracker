@@ -98,7 +98,7 @@ function StateSearch() {
             ></img>
             <h1
               className="h3 mb-3 font-weight-normal"
-              style={{ color: "white" }}
+              style={{ color: "white", textShadow: "2px 2px 4px #000000" }}
             >
               <b>Find Covid Vaccinations by State</b>
             </h1>

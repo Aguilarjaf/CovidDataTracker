@@ -117,6 +117,7 @@ form.example::after {
   font-size: 22px;
   margin: 0px;
   padding: 0px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .rotate {
@@ -139,8 +140,10 @@ form.example::after {
   background-size: cover;
   background: contain;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
 
   overflow: hidden;
 
