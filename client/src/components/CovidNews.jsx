@@ -19,8 +19,9 @@ function CovidNews() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <h3>Covid News Section</h3>
+      <p>This section gets updated as new stories come in.</p>
       {arrayUpdated
         ? articlesArray.map((singleArticle) => (
           <Article
@@ -29,6 +30,7 @@ function CovidNews() {
             title={singleArticle.title}
             author={singleArticle.author}
             articleDescription={singleArticle.description}
+            articleContent={singleArticle.content}
             link={singleArticle.url}
           />
         ))

@@ -8,6 +8,9 @@ html {
 /* Bootstrap CSS */
 
 body {
+
+  background-color: rgb(35, 35, 105) !important;
+
   /* display: -ms-flexbox; */
   /* display: -webkit-box; */
   /* display: flex; */
@@ -183,6 +186,7 @@ form.example::after {
 .learnMoreSection {
   width: 100%;
   margin-top: 15px;
+  color: white;
 }
 
 /* Styles for footer */
@@ -201,6 +205,13 @@ footer p {
 }
 
 .card {
-  max-width: 750px;
   margin: auto;
+}
+
+.newsArticle {
+  background-color: rgb(70, 70, 70) !important;
+}
+
+hr {
+  background-color: white !important;
 }

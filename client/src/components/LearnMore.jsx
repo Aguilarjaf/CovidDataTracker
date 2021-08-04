@@ -5,7 +5,7 @@ import CountryData from "./CountryData.jsx";
 
 function LearnMore() {
   return (
-    <div className="learnMoreSection">
+    <div className=" container learnMoreSection">
       <div id="learn-more">
         <h1><u>Learn More</u></h1>
       </div>

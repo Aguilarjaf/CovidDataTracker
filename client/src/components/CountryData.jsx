@@ -67,7 +67,9 @@ function CountryData() {
   return (
     <div>
       <h2>Select a Country Below</h2>
-      <select onChange={handleChange} value={currentCountry}>
+      <p>Explore the number of confirmed cases, recoveries, and deaths of the country of your choice.</p>
+      <select class="custom-selector" onChange={handleChange} value={currentCountry}>
+        <option value="" disabled selected>Select a Country</option>
         {countryArray.map((singleCountry) => (
           <option key={uuid()} value={singleCountry.name}>
             {singleCountry.name}
