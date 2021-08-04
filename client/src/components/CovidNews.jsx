@@ -15,9 +15,6 @@ function CovidNews() {
         console.log(parsed_data);
         setArticlesArray(parsed_data);
         setArrayUpdated(true);
-      })
-      .catch((error_data) => {
-        console.log(error_data);
       });
   }, []);
 
