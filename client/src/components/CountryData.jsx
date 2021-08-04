@@ -11,6 +11,7 @@ function CountryData() {
     recovered: "",
   });
   const [wasSelected, setWasSelected] = useState(false);
+  const [currentCountry, setCurrentCountry] = useState("");
 
   // Get all country names from the url below. Set the
   // returned array to a constant
@@ -36,6 +37,7 @@ function CountryData() {
 
   function handleChange(e) {
     const countrySelected = e.target.value;
+    setCurrentCountry(countrySelected);
     const countryDataUrl = `https://covid19.mathdro.id/api/countries/${countrySelected}`;
 
     console.log(countryDataUrl);
@@ -65,7 +67,7 @@ function CountryData() {
   return (
     <div>
       <h2>Select a Country Below</h2>
-      <select onChange={handleChange} value="test">
+      <select onChange={handleChange} value={currentCountry}>
         {countryArray.map((singleCountry) => (
           <option key={uuid()} value={singleCountry.name}>
             {singleCountry.name}

@@ -1,5 +1,5 @@
 import React from "react";
-// import CovidNews from "./CovidNews.jsx";
+import CovidNews from "./CovidNews.jsx";
 import GlobalData from "./GlobalData.jsx";
 import CountryData from "./CountryData.jsx";
 
@@ -11,7 +11,7 @@ function LearnMore() {
       </div>
       <GlobalData/>
       <CountryData/>
-      {/* <CovidNews /> */}
+      <CovidNews />
     </div>
   );
 }
