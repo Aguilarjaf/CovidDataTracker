@@ -55,7 +55,7 @@ function GlobalData() {
         </div>
       </div>
 
-      <img src="https://covid19.mathdro.id/api/og" alt="" width="400px"></img>
+      <img className="pb-2" src="https://covid19.mathdro.id/api/og" alt="" width="100%"></img>
 
     </div>
   );
