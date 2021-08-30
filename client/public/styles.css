@@ -9,7 +9,7 @@ html {
 
 body {
 
-  background-color: rgb(35, 35, 105) !important;
+  /* background-color: rgb(35, 35, 105) !important; */
 
   /* display: -ms-flexbox; */
   /* display: -webkit-box; */
@@ -139,7 +139,7 @@ form.example::after {
 /* Styles for jumbotron */
 .jumbotron-fluid {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("covidbg.PNG");
+    url("covidbg.jpg");
   background-size: cover;
   background: contain;
   background-position: center;

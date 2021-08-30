@@ -27,17 +27,36 @@ function GlobalData() {
 
   return (
     <div>
-      <h2>Global Data</h2>
-      {/* <img src="https://covid19.mathdro.id/api/og" alt="" width="400px"></img> */}
-      <p><b>Confirmed Cases</b></p>
-      <p>{confirmedCases}</p>
+      <div className="container border rounded mb-2">
+          <h2>Global Data Overview:</h2>
 
-      <p><b>Recoveries</b></p>
-      <p>{recoveredCases}</p>
+        <div className="row p-3">
 
-      <p><b>Deaths</b></p>
-      <p>{confirmedDeaths}</p>
-      <hr></hr>
+          <div className="col-xl-4 p-1">
+            <div className="card border-0">
+              <div className="text-dark rounded-top p-2" style={{ backgroundColor: "pink" }}><p><b>{confirmedDeaths}</b></p></div>
+              <div className="bg-danger rounded-bottom p-2"><p>Deaths</p></div>
+            </div>
+          </div>
+
+          <div className="col-xl-4 p-1">
+            <div className="card border-0">
+              <div className="text-dark rounded-top p-2" style={{ backgroundColor: "yellow" }}><p><b>{confirmedCases}</b></p></div>
+              <div className="bg-warning rounded-bottom p-2"><p>Confirmed</p></div>
+            </div>
+          </div>
+
+          <div className="col-xl-4 p-1">
+            <div className="card border-0">
+              <div className="text-dark rounded-top p-2" style={{ backgroundColor: "lightgreen" }}><p><b>{recoveredCases}</b></p></div>
+              <div className="bg-success rounded-bottom p-2"><p>Recoveries</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="https://covid19.mathdro.id/api/og" alt="" width="400px"></img>
+
     </div>
   );
 }

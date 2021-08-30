@@ -19,22 +19,25 @@ function CovidNews() {
   }, []);
 
   return (
-    <div>
-      <h3>Covid News Section</h3>
-      <p>This section gets updated as new stories come in.</p>
-      {arrayUpdated
-        ? articlesArray.map((singleArticle) => (
-          <Article
-            key={uuid()}
-            articleImage={singleArticle.urlToImage}
-            title={singleArticle.title}
-            author={singleArticle.author}
-            articleDescription={singleArticle.description}
-            articleContent={singleArticle.content}
-            link={singleArticle.url}
-          />
-        ))
-        : null}
+    <div className="container">
+        <h3>Covid News Section</h3>
+        <p>This section gets updated as new stories come in.</p>
+
+      <div className="row" style={{ height: "750px", overflow: "scroll" }}>
+        {arrayUpdated
+          ? articlesArray.map((singleArticle) => (
+            <Article
+              key={uuid()}
+              articleImage={singleArticle.urlToImage}
+              title={singleArticle.title}
+              author={singleArticle.author}
+              articleDescription={singleArticle.description}
+              articleContent={singleArticle.content}
+              link={singleArticle.url}
+            />
+          ))
+          : null}
+      </div>
     </div>
   );
 }

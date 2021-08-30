@@ -17,6 +17,7 @@ app.get("/newsapi", (req, res) => {
         country: 'us'
     }).then(response => {
         // Return articles from the covid search as json
+        console.log(response.articles);
         res.json(response.articles);
     });
 });

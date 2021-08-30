@@ -4,16 +4,19 @@ function Article(props) {
   console.log("author " + props.author);
 
   return (
-    <div >
-      <div className="card mb-3 newsArticle">
-          <div className="card-body">
-            <img src={props.articleImage} width="300" alt=""></img>
-            <h5 className="mt-3"><a href={props.link}>{props.title}</a></h5>
-            <p>By {props.author}</p>
-            <p>{props.articleDescription}</p>
-            <p>{props.articleContent}</p>
-          </div>
-        </div>
+    <div className="container">
+      <div className="row border mb-3 pt-3 bg-light ml-1 mr-1 mt-1">
+            <div className="col-md-4">
+              <img src={props.articleImage} width="135" alt=""></img>
+            </div>
+            
+            <div className="col-md-8 text-left">
+              <p className="p-0 m-0"><a href={props.link}>{props.title}</a></p>
+              {/* <p>By {props.author}</p> */}
+              <p className="p-0 m-0">{props.articleDescription}</p>
+              {/* <p>{props.articleContent}</p> */}
+            </div>
+      </div>
     </div>
   );
 }
